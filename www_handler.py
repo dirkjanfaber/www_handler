@@ -68,3 +68,15 @@ def parse_args():
     parser.add_argument('--port', type=int, default=9249,
                         help='The port to listen on')
     return parser.parse_args()
+
+
+def main():
+    args = parse_args()
+    if args.port:
+        run(port=args.port)
+    else:
+        run()
+
+
+if __name__ == '__main__':
+    main()
