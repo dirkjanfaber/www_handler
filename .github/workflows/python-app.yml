@@ -39,4 +39,4 @@ jobs:
         sudo install -d -o $(id -u) -g $(id -g) -m 0755 /data/themes/overlay/
     - name: Test with pytest
       run: |
-        pytest www_handler.py
+        pytest test_www_handler.py
